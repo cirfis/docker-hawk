@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+LABEL org.opencontainers.image.source https://github.com/cirfis/docker-hrconvert2
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 EXPOSE 80
